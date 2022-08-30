@@ -9,6 +9,7 @@ import java.time.LocalTime;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author igor
@@ -17,37 +18,43 @@ public class Escola {
 
     public static void main(String[] args) {
         //função responsável pela entrada de dados Obs: ela tmb é um objeto.
-        Scanner entrada = new Scanner(System.in);
+        //Scanner entrada = new Scanner(System.in);
         LocalTime horaAtual = LocalTime.now();
 
         String inputLogin, inputSenha;
-        boolean verificador = false;
+        boolean verificador;
 
         Diretor d1 = new Diretor();
 
         d1.setNome("igor");
         d1.setCpf("013355577");
-
+        
+        
         do {
             inputLogin = JOptionPane.showInputDialog("Login do administrador");
             inputSenha = JOptionPane.showInputDialog("Senha do administrador");
             
-            if(inputLogin.equals("admin") && inputSenha.equals("admin")){
-                System.out.println("Certo");
+            if(inputLogin.equals("admin") && inputSenha.equals("admin")){  
                 verificador = true;
+                d1.setLogin(inputLogin);
+                d1.setSenha(inputSenha);
+                System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
             } else {
-                System.out.println("ERRO");
+                JOptionPane.showMessageDialog(null, "Informe novamente o login e senha!");
                 verificador = false;
             }
 
         } while (verificador == false);
 
-        d1.setLogin(inputLogin);
-        d1.setSenha(inputSenha);
+        
+        
+        
+        
+   
 
         if (d1.getLogin().equals("admin") && d1.getSenha().equals("admin")) {
 
-            System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
+            
             System.out.println("Oque deseja fazer?");//fazer um case
 
         } else {
