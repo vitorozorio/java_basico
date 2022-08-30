@@ -20,19 +20,36 @@ public class Escola {
         Scanner entrada = new Scanner(System.in);
         LocalTime horaAtual = LocalTime.now();
 
+        String inputLogin, inputSenha;
+        boolean verificador = false;
+
         Diretor d1 = new Diretor();
+
         d1.setNome("igor");
         d1.setCpf("013355577");
 
-        d1.setLogin("admin");
-        d1.setSenha("admin");
-        
-
-         if (d1.getLogin().equals("admin") && d1.getSenha().equals("admin")) {
+        do {
+            inputLogin = JOptionPane.showInputDialog("Login do administrador");
+            inputSenha = JOptionPane.showInputDialog("Senha do administrador");
             
-             System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
-                System.out.println("Oque deseja fazer?");//fazer um case
-                    
+            if(inputLogin.equals("admin") && inputSenha.equals("admin")){
+                System.out.println("Certo");
+                verificador = true;
+            } else {
+                System.out.println("ERRO");
+                verificador = false;
+            }
+
+        } while (verificador == false);
+
+        d1.setLogin(inputLogin);
+        d1.setSenha(inputSenha);
+
+        if (d1.getLogin().equals("admin") && d1.getSenha().equals("admin")) {
+
+            System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
+            System.out.println("Oque deseja fazer?");//fazer um case
+
         } else {
             System.out.println("Por favor! Informe login e senha corretos!");
         }
