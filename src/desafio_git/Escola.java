@@ -24,12 +24,13 @@ public class Escola {
         d1.setNome("igor");
         d1.setCpf("013355577");
 
-        d1.setLogin("a");
-        d1.setSenha("a");
+        d1.setLogin("admin");
+        d1.setSenha("admin");
         
-        
-         if (d1.getLogin().equals("a") && d1.getSenha().equals("a")) {
-            System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
+
+         if (d1.getLogin().equals("admin") && d1.getSenha().equals("admin")) {
+            
+             System.out.println("### Bem vindo são exatamente: { " + horaAtual + " } Horário de Brasília");
                 System.out.println("Oque deseja fazer?");//fazer um case
                     
         } else {
