@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  */
 public class Escola {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //função responsável pela entrada de dados Obs: ela tmb é um objeto.
         //Scanner entrada = new Scanner(System.in);
         LocalTime horaAtual = LocalTime.now();
