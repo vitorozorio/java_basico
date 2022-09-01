@@ -34,7 +34,13 @@ public class Sintaxe {
                 System.out.println(letras);
                 
                 //tipo String
+                    //ex: ele é um objeto
+                String nome = "Aurora";
                 
+                
+                System.out.println("ola mundo");
+                
+                a
         
     }
 }
