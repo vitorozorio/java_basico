@@ -56,16 +56,13 @@ public class Sintaxe {
                
                //objeto de entrada do java, obs que ele foi importado
                Scanner entrada = new Scanner(System.in);
+             
                
-               System.out.print("Digite um numero: ");
-               int numero = entrada.nextInt();
+               System.out.println("o  escreve alguma coisa ai o cabaço");
                
-               System.out.println("O número digitado foi: " + numero);
-               
-               
-               
-               
-                   
+                 String nome1 = entrada.nextLine();
+                 
+                 System.out.println(nome1);
                 
                 
         
