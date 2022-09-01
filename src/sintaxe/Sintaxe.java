@@ -40,7 +40,7 @@ public class Sintaxe {
                 
                 System.out.println("ola mundo");
                 
-                a
+                
         
     }
 }
