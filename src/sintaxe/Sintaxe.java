@@ -30,6 +30,11 @@ public class Sintaxe {
                 letras[1] = 'G';
                 letras[2] = 'O';
                 letras[3] = 'R';
+                
+                System.out.println(letras);
+                
+                //tipo String
+                
         
     }
 }
