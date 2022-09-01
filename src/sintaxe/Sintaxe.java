@@ -5,6 +5,8 @@
  */
 package sintaxe;
 
+import java.util.Scanner;
+
 /**
  *
  * @author igor
@@ -39,9 +41,10 @@ public class Sintaxe {
                 
                 
                //estruturas de repetição
-               for(int i = -1; i < 10; i--){
+               
+               /*for(int i = 1; i < 10; i++){
                    System.out.println("bola"+i);
-               }
+               }*/
                
                /*
                * comentei pois ele vai gerar loop infinito
@@ -50,6 +53,15 @@ public class Sintaxe {
                    
                }
                */
+               
+               //objeto de entrada do java, obs que ele foi importado
+               Scanner entrada = new Scanner(System.in);
+               
+               System.out.print("Digite um numero: ");
+               int numero = entrada.nextInt();
+               
+               System.out.println("O número digitado foi: " + numero);
+               
                
                
                
