@@ -38,7 +38,19 @@ public class Sintaxe {
                 String nome = "Aurora";
                 
                 
-                System.out.println("ola mundo");
+               //estruturas de repetição
+               for(int i = 0; i < 10; i++){
+                   
+               }
+               
+               /*
+               * comentei pois ele vai gerar loop infinito
+               *
+               while(10 == 10){
+                   
+               }
+               */
+                   
                 
                 
         
